@@ -42,7 +42,7 @@ app.get('/product', (req, res) => {
 });
 
 
-// get a specific record
+// get a specific product
 app.get('/product/:id', (req, res) => {
     const id = req.params.id;
 
