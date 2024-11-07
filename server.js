@@ -58,7 +58,7 @@ app.get('/product/:id', (req, res) => {
 });
 
 
-// Create a new record
+// Create a new product
 app.post('/product', (req, res) => {
     const { name, price, description, img } = req.body;
 
@@ -74,7 +74,7 @@ app.post('/product', (req, res) => {
 });
 
 
-// Update an existing record
+// Update an existing product
 app.put('/product/:id', (req, res) => {
     const id = req.params.id;
     const { name, age } = req.body;
@@ -90,7 +90,7 @@ app.put('/product/:id', (req, res) => {
     });
 });
 
-// Delete a record
+// Delete a product
 app.delete('/product/:id', (req, res) => {
     const id = req.params.id;
 
